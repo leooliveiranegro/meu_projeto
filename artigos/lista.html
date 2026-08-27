@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confira todos os artigos, dicas e guias sobre musculação, corrida, alimentação e saúde do portal Velho Guerreiro.">
+    <meta name="keywords" content="artigos, musculação, treinos, alimentação, suplementação, saúde, velho guerreiro">
+    <meta name="author" content="Velho Guerreiro">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="/imagens/favicon/loguinho.ico" type="image/x-icon">
+    <title>Novidades & Artigos | Velho Guerreiro</title>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9372817756630399"
+     crossorigin="anonymous">
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f2f2f2;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+        }
+
+        .chamada {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #ddd;
+            font-size: 2rem;
+        }
+
+        nav {
+            background: #A0522D;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 10px;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            background: #111;
+            color: #fff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .hero-artigos {
+            text-align: center;
+            margin-bottom: 35px;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .hero-artigos h1 {
+            color: #111;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-artigos p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .artigos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card-artigo {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-artigo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .card-imagem-link {
+            display: block;
+            overflow: hidden;
+            height: 180px;
+        }
+
+        .card-imagem {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card-artigo:hover .card-imagem {
+            transform: scale(1.05);
+        }
+
+        .card-conteudo {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .categoria-tag {
+            align-self: flex-start;
+            background: #f5eee9;
+            color: #A0522D;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .card-titulo {
+            font-size: 1.25rem;
+            color: #111;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .card-titulo a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .card-titulo a:hover {
+            color: #A0522D;
+        }
+
+        .card-resumo {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .card-rodape {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eee;
+            padding-top: 12px;
+            margin-top: auto;
+        }
+
+        .card-data {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .card-btn {
+            color: #A0522D;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-btn:hover {
+            color: #111;
+        }
+
+        
+        footer {
+            background: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .copyright {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 12px;
+            }
+
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            .chamada {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+
+            main {
+                margin-top: 20px;
+                padding: 0 10px;
+            }
+
+            .artigos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html" aria-label="Página inicial">
+            <img class="logo" src="../imagens/velho_guerreiro.png" alt="Logo Velho Guerreiro">
+        </a>
+        <div>
+            <div class="chamada">VELHO GUERREIRO</div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="lista.html" class="active">Artigos</a></li>
+            <li><a href="../produtos.html">Produtos</a></li>
+            <li><a href="../sobre.html">Sobre</a></li>
+            <li><a href="../contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="hero-artigos">
+            <h1>Novidades & Artigos</h1>
+            <p>Conteúdos práticos sobre treino, musculação, nutrição e hábitos para quem busca constante evolução.</p>
+        </section>
+
+       
+        <section class="artigos-grid">
+
+            <!-- ARTIGO 1 (COPIE ESTE BLOCO PARA CADA NOVO ARTIGO) -->
+            <article class="card-artigo">
+                <a href="../artigos/treino_forca.html" target="_blank" class="card-imagem-link">
+                    <img src="../imagens/const_musc.jpg" alt="Treino de Força Eficiente" class="card-imagem" loading="lazy">
+                </a>
+                <div class="card-conteudo">
+                    <span class="categoria-tag">Treinos</span>
+                    <h2 class="card-titulo">
+                        <a href="../artigos/treino_forca.html" target="_blank">Como Montar um Treino de Força Eficiente Após os 40 Anos</a>
+                    </h2>
+                    <p class="card-resumo">
+                        Descubra como estruturar sua rotina de musculação priorizando a hipertrofia, recuperação muscular e prevenção de lesões.
+                    </p>
+                    <div class="card-rodape">
+                        <span class="card-data">24/08/2026</span>
+                        <a href="../artigos/treino_forca.html" target="_blank" class="card-btn">Ler Artigo &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ARTIGO 2 -->
+            <article class="card-artigo">
+                <a href="../artigos/alim_cetog.html" target="_blank" class="card-imagem-link">
+                    <img src="../imagens/ceto3.png" alt="Título do artigo 2" class="card-imagem" loading="lazy">
+                </a>
+                <div class="card-conteudo">
+                    <span class="categoria-tag">Alimentação</span>
+                    <h2 class="card-titulo">
+                        <a href="../artigos/alim_cetog.html" target="_blank">Alimentação Inteligente: Estratégias Para Acelerar o Metabolismo</a>
+                    </h2>
+                    <p class="card-resumo">
+                        Veja os principais alimentos e hábitos nutricionais que ajudam a manter a energia alta e queimar gordura de forma consistente.
+                    </p>
+                    <div class="card-rodape">
+                        <span class="card-data">22/08/2026</span>
+                        <a href="../artigos/alim_cetog.html" target="_blank" class="card-btn">Ler Artigo &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ARTIGO 3 -->
+            <article class="card-artigo">
+                <a href="../artigos/card_suplme.html" target="_blank" class="card-imagem-link">
+                    <img src="../imagens/suplementos_gerais.png" alt="Título do artigo 3" class="card-imagem" loading="lazy">
+                </a>
+                <div class="card-conteudo">
+                    <span class="categoria-tag">Suplementos</span>
+                    <h2 class="card-titulo">
+                        <a href="../artigos/card_suplme.html" target="_blank">Guia Definitivo de Creatina e Whey Protein: Vale a Pena?</a>
+                    </h2>
+                    <p class="card-resumo">
+                        Entenda o papel real dos suplementos alimentares no ganho de força e na recuperação pós-treino diária.
+                    </p>
+                    <div class="card-rodape">
+                        <span class="card-data">23/08/2026</span>
+                        <a href="../artigos/card_suplme.html" target="_blank" class="card-btn">Ler Artigo &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+         <!-- ARTIGO 4 -->
+            <article class="card-artigo">
+                <a href="../artigos/testo.html" target="_blank" class="card-imagem-link">
+                    <img src="../imagens/testo_1000_1.jpg" alt="Título do artigo 3" class="card-imagem" loading="lazy">
+                </a>
+                <div class="card-conteudo">
+                    <span class="categoria-tag">Testosterona</span>
+                    <h2 class="card-titulo">
+                        <a href="../artigos/testo.html" target="_blank">Saiba como potencializar a produção natural de Testosterona em seu corpo</a>
+                    </h2>
+                    <p class="card-resumo">
+                        Testosterona o combústivel para o ganho de massa magra 
+                    </p>
+                    <div class="card-rodape">
+                        <span class="card-data">23/08/2026</span>
+                        <a href="../artigos/testo.html" target="_blank" class="card-btn">Ler Artigo &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+         <!-- ARTIGO 5 -->
+            <article class="card-artigo">
+                <a href="../artigos/alongamento.html" target="_blank" class="card-imagem-link">
+                    <img src="../imagens/along_2.jpg" alt="Treinamento Calistenia Barra Fixa" class="card-imagem" loading="lazy">
+                </a>
+                <div class="card-conteudo">
+                    <span class="categoria-tag">Alongamento</span>
+                    <h2 class="card-titulo">
+                        <a href="../artigos/alongamento.html" target="_blank">Aprenda a diminuir o risco de lesões, como tendinites, estiramentos e dores lombares.</a>
+                    </h2>
+                    <p class="card-resumo">
+                        Alongamento o segredo para <b>não travar</b> o crescimento e definição da musculatura.
+                    </p>
+                    <div class="card-rodape">
+                        <span class="card-data">23/08/2026</span>
+                        <a href="../artigos/alongamento.html" target="_blank" class="card-btn">Ler Artigo &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+        
+            <!-- ARTIGO 6 -->
+            <article class="card-artigo">
+                <a href="../artigos/treino_casa_barra.html" target="_blank" class="card-imagem-link">
+                    <img src="../imagens/barra_em casa.jpg" alt="Calistenia Barra Fixa" class="card-imagem" loading="lazy">
+                </a>
+                <div class="card-conteudo">
+                    <span class="categoria-tag">Treinando em casa Barra Fixa</span>
+                    <h2 class="card-titulo">
+                        <a href="../artigos/treino_casa_barra.html" target="_blank">Treine em casa e faça sua própria rotina.</a>
+                    </h2>
+                    <p class="card-resumo">
+                        Seu <b>horário sua rotina no seu tempo</b>, treine em casa e mantenha sua evolução corporal.
+                    </p>
+                    <div class="card-rodape">
+                        <span class="card-data">24/08/2026</span>
+                        <a href="../artigos/treino_casa_barra.html" target="_blank" class="card-btn">Ler Artigo &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+             <!-- ARTIGO 7 -->
+            <article class="card-artigo">
+                <a href="../artigos/pre_tre_hidra.html" target="_blank" class="card-imagem-link">
+                    <img src="../imagens/agua_creatina.jpg" alt="Pré-Treino e Hidrtação" class="card-imagem" loading="lazy">
+                </a>
+                <div class="card-conteudo">
+                    <span class="categoria-tag">Pré-Treino e Hidratação</span>
+                    <h2 class="card-titulo">
+                        <a href="../artigos/pre_tre_hidra.html" target="_blank">A Hidratação é elementar para um organismo preparado e condicionado para atividade s físicas</a>
+                    </h2>
+                    <p class="card-resumo">
+                        Seu <b>horário sua rotina no seu tempo</b>, treine em casa e mantenha sua evolução corporal.
+                    </p>
+                    <div class="card-rodape">
+                        <span class="card-data">24/08/2026</span>
+                        <a href="../artigos/pre_tre_hidra.html" target="_blank" class="card-btn">Ler Artigo &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ARTIGO 8 -->
+            <article class="card-artigo">
+                <a href="../artigos/vitamina_b12.html" target="_blank" class="card-imagem-link">
+                    <img src="../imagens/capa_b12.jpg" alt="Controle da Vitamina B-12" class="card-imagem" loading="lazy">
+                </a>
+                <div class="card-conteudo">
+                    <span class="categoria-tag">Controle da Vitamina B-12</span>
+                    <h2 class="card-titulo">
+                        <a href="../artigos/vitamina_b12.html" target="_blank">A importância de acompanhamento com Endocrinologista para um controle efetivo das vitaminas e hormônios.</a>
+                    </h2>
+                    <p class="card-resumo">
+                        A forma correta de potencializar o ganho de massa corporal controlando a Vitamina B-12.
+                    </p>
+                    <div class="card-rodape">
+                        <span class="card-data">25/08/2026</span>
+                        <a href="../artigos/vitamina_b12.html" target="_blank" class="card-btn">Ler Artigo &rarr;</a>
+                    </div>
+                </div>
+            </article>
+                <!-- ARTIGO 9 -->
+
+            <article class="card-artigo">
+                <a href="../artigos/treino_barra_real.html" target="_blank" class="card-imagem-link">
+                    <img src="../imagens/barra_praca_bonita.jpg"  alt="Fazendo Barras na praça pública" class="card-imagem" loading="lazy">
+                </a>
+                <div class="card-conteudo">
+                    <span class="categoria-tag">Treine em casa ou Treine na Praça</span>
+                    <h2 class="card-titulo">
+                        <a href="../artigos/treino_barra_real.html" target="_blank">Treine em casa utilizando a Barra fixa.</a>
+                    </h2>
+                    <p class="card-resumo">
+                        Mantenha a sua perfomance treinando em Casa ou nas praças públicas.
+                    </p>
+                    <div class="card-rodape">
+                        <span class="card-data">25/08/2026</span>
+                        <a href="../artigos/treino_barra_real.html" target="_blank" class="card-btn">Ler Artigo &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+
+        </section>
+       
+    </main>
+
+    <footer>
+        <p><strong>Velho Guerreiro</strong></p>
+        <p>Força, disciplina e evolução.</p>
+        <p>
+            <a href="../index.html">Início</a> |
+            <a href="lista.html">Artigos</a> |
+            <a href="../sobre.html">Sobre</a> |
+            <a href="../politica_priv.html" target="_blank">Política de Privacidade</a> |
+            <a href="../termos_uso.html">Termos de Uso</a> |
+            <a href="../contato.html">Contato</a>
+        </p>
+        <p class="copyright">
+            © 2026 Velho Guerreiro. Todos os direitos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>

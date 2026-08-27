@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Velho Guerreiro: musculação, corrida, alimentação, receitas fitness e dicas para homens que querem melhorar força, condicionamento e qualidade de vida.">
+
+    <meta name="keywords"
+          content="musculação, corrida, alimentação fitness, receitas fitness, treino depois dos 40, suplementos, saúde, força">
+
+    <meta name="author" content="Velho Guerreiro">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title"
+          content="Velho Guerreiro - Força, Treino e Alimentação">
+
+    <meta property="og:description"
+          content="Conteúdos sobre musculação, corrida, alimentação e performance.">
+
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="/imagens/favicon/loguinho.ico" type="image/x-icon">
+
+    <title>Velho Guerreiro | Força, Treino e Alimentação</title>
+
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9372817756630399"
+     crossorigin="anonymous">
+    </script>
+
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            background: #f2f2f2;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           CABEÇALHO
+        ========================= */
+
+        header {
+            background: #111;
+            color: white;
+            padding: 15px 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+
+        .logo {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+        }
+
+
+        .chamada {
+            font-family:
+                'Franklin Gothic Medium',
+                'Arial Narrow',
+                Arial,
+                sans-serif;
+
+            color: #ddd;
+            font-size: 2rem;
+        }
+
+
+        /* =========================
+           MENU
+        ========================= */
+
+        nav {
+            background: #A0522D;
+        }
+
+
+        nav ul {
+            list-style: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 5px;
+
+            padding: 10px;
+        }
+
+
+        nav a {
+            display: block;
+
+            text-decoration: none;
+
+            color: white;
+
+            padding: 8px 14px;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+            background: #111;
+            color: #fff;
+        }
+
+
+        /* =========================
+           CONTEÚDO
+        ========================= */
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+
+        article {
+            background: white;
+
+            margin-bottom: 25px;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 2px 10px rgba(0,0,0,0.08);
+        }
+
+
+        article h2 {
+            color: #A0522D;
+
+            margin-bottom: 20px;
+
+            font-size: 1.8rem;
+
+            border-left: 5px solid #A0522D;
+
+            padding-left: 12px;
+        }
+
+
+        article h3 {
+            margin-top: 25px;
+            margin-bottom: 8px;
+
+            color: #333;
+        }
+
+
+        article p {
+            margin-bottom: 15px;
+        }
+
+
+        /* =========================
+           DESTAQUE
+        ========================= */
+
+        .hero {
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.7),
+                    rgba(0,0,0,0.7)
+                ),
+                url("imagens/capa.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 80px 25px;
+
+            border-radius: 10px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+
+            font-size: 1.1rem;
+        }
+
+
+        .botao {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            padding: 12px 22px;
+
+            background: #A0522D;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .botao:hover {
+            background: #111;
+        }
+
+
+
+        /* =========================
+           BOTÃO RECEITAS GRÁTIS
+        ========================= */
+
+        .receita {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 10px 0 25px;
+            padding: 13px 22px;
+            min-width: 180px;
+            background: #A0522D;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #A0522D;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+            transition: 0.25s ease;
+        }
+
+        .receita::before {
+            content: "📖";
+        }
+
+        .receita:hover {
+            background: #111;
+            border-color: #111;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .receita:focus-visible {
+            outline: 3px solid #d9b29c;
+            outline-offset: 3px;
+        }
+
+        /* =========================
+           ARTIGOS
+        ========================= */
+
+        .imagem-artigo {
+            width: 100%;
+            max-width: 500px;
+
+            height: auto;
+
+            border-radius: 8px;
+
+            display: block;
+
+            margin: 0 auto 20px;
+        }
+
+
+        .lista {
+            padding-left: 25px;
+        }
+
+
+        .lista li {
+            margin-bottom: 10px;
+        }
+
+
+        /* =========================
+           ADVERTISEMENT
+        ========================= */
+
+               /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #111;
+
+            color: #ccc;
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+            margin-top: 40px;
+        }
+
+
+        footer a {
+            color: #ddd;
+
+            text-decoration: none;
+
+            margin: 0 8px;
+        }
+
+
+        footer a:hover {
+            color: white;
+        }
+
+
+        .copyright {
+            margin-top: 15px;
+
+            font-size: 0.9rem;
+
+            color: #888;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 12px;
+            }
+
+
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+
+
+            .chamada {
+                font-size: 1.5rem;
+            }
+
+
+            nav ul {
+                flex-direction: column;
+            }
+
+
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+
+
+            main {
+                margin-top: 20px;
+                padding: 0 10px;
+            }
+
+
+            article {
+                padding: 20px;
+            }
+
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
+        <a href="index.html" aria-label="Página inicial">
+            <img
+                class="logo"
+                src="imagens/velho_guerreiro.png"
+                alt="Logo Velho Guerreiro">
+        </a>
+
+        <div>
+            <div class="chamada">
+                VELHO GUERREIRO
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Início
+                </a>
+            </li>
+
+            <li>
+                <a href="./artigos/lista.html" target="_blank">
+                  Artigos & Blog  
+                </a>
+            </li>
+
+            <li>
+                <a href="#treinos">
+                    Treinos
+                </a>
+            </li>
+
+            <li>
+                <a href="#alimentacao">
+                    Alimentação
+                </a>
+            </li>
+
+            <li>
+                <a href="#suplementacao">
+                    Suplementação
+                </a>
+            </li>
+
+            <li>
+                <a href="produtos.html">
+                    Produtos
+                </a>
+            </li>
+
+            <li>
+                <a href="sobre.html">
+                    Sobre
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <h1>
+                Força não tem idade.
+            </h1>
+
+            <p>
+                Treino, alimentação e disciplina para quem
+                decidiu continuar evoluindo.
+            </p>
+
+            <a
+                class="botao"
+                href="#treinos">
+
+                COMEÇAR AGORA
+
+            </a>
+
+        </section>
+
+
+               
+        <!-- TREINOS -->
+
+        <article id="treinos">
+
+            <h2>
+                🏋️ Treinos
+            </h2>
+
+            <img
+                class="imagem-artigo"
+                src="imagens/const_musc.jpg"
+                alt="Ilustração relacionada a força e treinamento"
+                loading="lazy">
+
+            <p>
+                A musculação é uma das melhores ferramentas
+                para desenvolver força, preservar massa muscular
+                e melhorar o condicionamento físico.
+            </p>
+
+            <p>
+                Para quem está acima dos 40 anos, consistência
+                e recuperação tornam-se especialmente importantes.
+                Não é necessário treinar todos os dias para evoluir.
+            </p>
+
+            <h3>
+                Alguns pontos importantes:
+            </h3>
+
+            <ul class="lista">
+
+                <li>
+                    Priorize a execução correta dos exercícios.
+                </li>
+
+                <li>
+                    Aumente a carga progressivamente.
+                </li>
+
+                <li>
+                    Respeite os períodos de descanso.
+                </li>
+
+                <li>
+                    Combine musculação com atividades
+                    cardiovasculares.
+                </li>
+
+                <li>
+                    Mantenha uma alimentação adequada
+                    ao seu objetivo.
+                </li>
+
+            </ul>
+
+        </article>
+
+
+        <!-- SUPLEMENTAÇÃO -->
+
+        <article id="suplementacao">
+
+            <h2>
+                💪 Como suplementar
+            </h2>
+
+            <p>
+                Suplementos podem complementar uma alimentação
+                adequada, mas não substituem uma dieta equilibrada.
+            </p>
+
+            <h3>
+                Alimentos ricos em proteínas
+            </h3>
+
+            <p>
+                Ovos, carnes, frango, leite, iogurte e peixes
+                são opções interessantes para aumentar a ingestão
+                de proteínas.
+            </p>
+
+            <h3>
+                Café
+            </h3>
+
+            <p>
+                O café é uma fonte acessível de cafeína e pode
+                fazer parte da rotina de algumas pessoas antes
+                do treinamento.
+            </p>
+
+            <h3>
+                Beterraba
+            </h3>
+
+            <p>
+                A beterraba contém nitratos naturais e pode ser
+                utilizada como parte de uma alimentação voltada
+                ao desempenho físico.
+            </p>
+
+            <p>
+                <strong>
+                    Importante:
+                </strong>
+
+                necessidades nutricionais variam de pessoa
+                para pessoa. Pessoas com condições de saúde,
+                uso de medicamentos ou necessidades específicas
+                devem procurar orientação profissional.
+            </p>
+
+        </article>
+
+
+        <!-- ALIMENTAÇÃO -->
+
+        <article id="alimentacao">
+
+            <h2>
+                🥩 Alimentação
+            </h2>
+
+            <p>
+                Uma boa alimentação não precisa ser complicada
+                nem necessariamente cara.
+            </p>
+            
+            
+            <p>
+                O objetivo deve ser construir uma rotina que
+                seja nutricionalmente adequada e que você consiga
+                manter durante meses e anos.
+            </p>
+            <p style="color:#2e7d32; font-weight: bold;">Dieta GRÁTIS, um presente do velho guereiro para você...</p>
+            <a class="receita" href="brindes/receitas_fitness_velho_guerreiro.pdf" target="_blank" rel="noopener" aria-label="Abrir o PDF com 6 receitas fitness grátis">Dieta Grátis</a>
+            
+            <h3>
+                Alimentos que podem fazer parte da sua rotina
+            </h3>
+
+            <ul class="lista">
+
+                <li>
+                    Ovos
+                </li>
+
+                <li>
+                    Arroz e feijão
+                </li>
+
+                <li>
+                    Frango
+                </li>
+
+                <li>
+                    Carne bovina
+                </li>
+
+                <li>
+                    Sardinha
+                </li>
+
+                <li>
+                    Frutas
+                </li>
+
+                <li>
+                    Verduras e legumes
+                </li>
+
+                <li>
+                    Leite e derivados
+                </li>
+
+            </ul>
+
+        </article>
+
+
+        <!-- DESCANSO -->
+
+        <article id="descanso">
+
+            <h2>
+                😴 Como descansar
+            </h2>
+
+            <p>
+                Treinar é apenas uma parte do processo.
+                A recuperação também precisa fazer parte
+                da rotina.
+            </p>
+
+            <p>
+                Sono adequado, alimentação e dias de recuperação
+                ajudam a manter a consistência dos treinamentos.
+            </p>
+
+        </article>
+
+
+        <!-- SOBRE -->
+
+        <article id="sobre">
+
+            <h2>
+                🧔 Sobre o Velho Guerreiro
+            </h2>
+
+            <p>
+                O Velho Guerreiro nasceu com uma ideia simples:
+                idade não precisa ser uma desculpa para abandonar
+                a busca por força, saúde e qualidade de vida.
+            </p>
+
+            <p>
+                Aqui você encontrará conteúdos sobre treinamento,
+                alimentação, corrida, receitas e hábitos que podem
+                ajudar quem deseja manter uma vida mais ativa.
+            </p>
+
+        </article>
+
+
+       
+    </main>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <p>
+            <strong>
+                Velho Guerreiro
+            </strong>
+        </p>
+
+        <p>
+            Força, disciplina e evolução.
+        </p>
+
+        <p>
+
+          
+            <a href="sobre.html">
+                Sobre
+            </a>
+
+            |
+
+            <a href="politica_priv.html" target="_blank">
+                Política de Privacidade
+            </a>
+
+            |
+
+            <a href="termos_uso.html" target="_blank">
+                Termos de Uso
+            </a>
+
+            |
+
+            <a href="contato.html">
+                Contato
+            </a>
+
+        </p>
+
+        <p class="copyright">
+
+            © 2026 Velho Guerreiro.
+            Todos os direitos reservados.
+
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

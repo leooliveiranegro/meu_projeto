@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Produtos recomendados pelo Velho Guerreiro para treino, musculação e qualidade de vida.">
+
+    <title>Produtos | Velho Guerreiro</title>
+    <link rel="shortcut icon" href="/imagens/favicon/loguinho.ico" type="image/x-icon">
+
+    <style>
+
+        /* =========================
+           CONFIGURAÇÕES GERAIS
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+
+            background-color: #f2f2f2;
+
+            color: #222;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           CABEÇALHO
+        ========================= */
+
+        header {
+
+            background-color: #111;
+
+            color: white;
+
+            min-height: 80px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            padding: 10px 20px;
+        }
+
+
+        #velho {
+
+            width: 70px;
+
+            height: 70px;
+
+            object-fit: contain;
+        }
+
+
+        header h1 {
+
+            color: #ddd;
+
+            font-size: 2rem;
+
+            text-align: center;
+        }
+
+
+        /* =========================
+           MENU
+        ========================= */
+
+        nav {
+
+            background-color: #A0522D;
+
+            padding: 10px;
+
+            text-align: center;
+        }
+
+
+        nav a {
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            margin: 0 10px;
+        }
+
+
+        nav a:hover {
+
+            color: #111;
+        }
+
+
+        /* =========================
+           CONTEÚDO
+        ========================= */
+
+        main {
+
+            max-width: 1000px;
+
+            margin: 30px auto;
+
+            padding: 0 20px;
+        }
+
+
+        .titulo {
+
+            text-align: center;
+
+            margin-bottom: 30px;
+        }
+
+
+        .titulo h2 {
+
+            color: #A0522D;
+
+            font-size: 2rem;
+        }
+
+
+        .titulo p {
+
+            color: #666;
+
+            margin-top: 5px;
+        }
+
+
+        /* =========================
+           PRODUTO
+        ========================= */
+
+        .produto-card {
+
+            background-color: white;
+
+            padding: 25px;
+
+            margin-bottom: 30px;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+
+        .produto-topo {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .produto {
+
+            width: 180px;
+
+            height: 180px;
+
+            object-fit: contain;
+
+            border-radius: 8px;
+        }
+
+
+        .produto-info {
+
+            flex: 1;
+        }
+
+
+        .produto-info h2 {
+
+            color: #A0522D;
+
+            margin-bottom: 10px;
+        }
+
+
+        .botao {
+
+            display: inline-block;
+
+            background-color: #A0522D;
+
+            color: white;
+
+            text-decoration: none;
+
+            padding: 10px 20px;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+
+            margin-top: 12px;
+
+            transition: 0.3s;
+        }
+
+
+        .botao:hover {
+
+            background-color: #111;
+
+            color: white;
+        }
+
+
+        /* =========================
+           DESCRIÇÃO
+        ========================= */
+
+        .descricao {
+
+            border-top: 1px solid #ddd;
+
+            padding-top: 20px;
+        }
+
+
+        .descricao h3 {
+
+            color: #A0522D;
+
+            margin-top: 20px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .descricao h3:first-child {
+
+            margin-top: 0;
+        }
+
+
+        .descricao ul {
+
+            margin-left: 25px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .descricao li {
+
+            margin-bottom: 5px;
+        }
+
+
+        .aviso {
+
+            background-color: #f5eee9;
+
+            border-left: 5px solid #A0522D;
+
+            padding: 15px;
+
+            margin-top: 20px;
+
+            font-size: 0.95rem;
+        }
+
+
+        /* =========================
+           SEPARADOR
+        ========================= */
+
+        hr {
+
+            border: 0;
+
+            border-top: 1px solid #ddd;
+
+            margin: 40px 0;
+        }
+
+
+        /* =========================
+           RODAPÉ
+        ========================= */
+
+        footer {
+
+            background-color: #111;
+
+            color: #aaa;
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+            margin-top: 40px;
+        }
+
+
+        footer a {
+
+            color: #ddd;
+
+            text-decoration: none;
+
+            margin: 0 8px;
+        }
+
+
+        footer a:hover {
+
+            color: white;
+        }
+
+
+        .copyright {
+
+            margin-top: 15px;
+
+            font-size: 0.9rem;
+
+            color: #777;
+        }
+
+
+        /* =========================
+           CELULAR
+        ========================= */
+
+        @media (max-width: 650px) {
+
+            header {
+
+                flex-direction: column;
+
+                gap: 5px;
+            }
+
+
+            header h1 {
+
+                font-size: 1.5rem;
+            }
+
+
+            .produto-topo {
+
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+
+            .produto {
+
+                width: 160px;
+
+                height: 160px;
+            }
+
+
+            .produto-info {
+
+                width: 100%;
+            }
+
+
+            main {
+
+                padding: 0 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
+        <a href="index.html">
+
+            <img
+                id="velho"
+                src="imagens/velho_guerreiro.png"
+                alt="Logo Velho Guerreiro">
+
+        </a>
+
+        <h1>
+            PRODUTOS
+        </h1>
+
+    </header>
+
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <nav>
+
+        <a href="index.html">
+            Início
+        </a>
+
+        <a href="sobre.html">
+            Sobre
+        </a>
+
+        <a href="produtos.html">
+            Produtos
+        </a>
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <main>
+
+
+        <div class="titulo">
+
+            <h2>
+                Produtos para sua rotina
+            </h2>
+
+            <p>
+                Confira alguns produtos verificados e usados pelo <b>VELHO GUERREIRO</b>.
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+             PRODUTO 1
+        ========================== -->
+
+        <article class="produto-card">
+
+            <div class="produto-topo">
+
+
+                <a
+                    href="https://meli.la/29sxb33"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <img
+                        class="produto"
+                        src="imagens/creatina.png"
+                        alt="Creatina Monohidratada FTW">
+
+                </a>
+
+
+                <div class="produto-info">
+
+                    <h2>
+                        Creatina Monohidratada em Pó 1 Kg - FTW
+                    </h2>
+
+                    <p>
+                        Creatina monohidratada micronizada para
+                        complementar a rotina de treinamento.
+                    </p>
+
+
+                    <a
+                        class="botao"
+                        href="https://meli.la/29sxb33"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        SAIBA MAIS
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- DESCRIÇÃO -->
+
+            <div class="descricao">
+
+                <h3>
+                    O que é / Para que serve
+                </h3>
+
+                <p>
+                    Creatina FTW é suplemento alimentar em pó à base
+                    de creatina monohidratada micronizada. Pode ser
+                    utilizado por pessoas adultas como parte de uma
+                    rotina alimentar equilibrada e associada à prática
+                    de atividade física.
+                </p>
+
+
+                <h3>
+                    Ingredientes
+                </h3>
+
+                <p>
+                    Creatina monohidratada micronizada.
+                </p>
+
+                <p>
+                    <strong>
+                        NÃO CONTÉM GLÚTEN.
+                    </strong>
+                </p>
+
+
+                <h3>
+                    Apresentação
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Pote com 1 Kg
+                    </li>
+
+                    <li>
+                        Porção: 3 g (½ medida dosadora)
+                    </li>
+
+                    <li>
+                        Rendimento: cerca de 333 porções
+                    </li>
+
+                </ul>
+
+
+                <h3>
+                    Como consumir
+                </h3>
+
+                <p>
+                    Diluir ½ medida dosadora (3 g) em 200 ml de água
+                    ou bebida de sua preferência. Consumir uma vez
+                    ao dia ou conforme orientação profissional.
+                </p>
+
+
+                <h3>
+                    Informações adicionais
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Produto indicado para o grupo populacional
+                        ≥ 19 anos.
+                    </li>
+
+                    <li>
+                        Este produto não é um medicamento.
+                    </li>
+
+                    <li>
+                        Não exceder a recomendação diária de consumo
+                        indicada na embalagem.
+                    </li>
+
+                    <li>
+                        Este produto não deve ser consumido por
+                        gestantes, lactantes e crianças.
+                    </li>
+
+                    <li>
+                        Mantenha fora do alcance de crianças.
+                    </li>
+
+                    <li>
+                        Conservar ao abrigo da luz, calor e umidade.
+                    </li>
+
+                    <li>
+                        Após aberto, consumir em até 100 dias.
+                    </li>
+
+                </ul>
+
+
+                <h3>
+                    Certificação
+                </h3>
+
+                <p>
+                    Suplemento alimentar dispensado de registro
+                    conforme Resolução RDC nº 240/2018.
+                    Alegações baseadas no Anexo V da IN 28 Anvisa.
+                </p>
+
+
+                <div class="aviso">
+
+                    <strong>
+                        Aviso legal
+                    </strong>
+
+                    <ul>
+
+                        <li>
+                            Idade mínima recomendada: 18 anos.
+                        </li>
+
+                        <li>
+                            Consumir conforme as orientações da
+                            embalagem.
+                        </li>
+
+                        <li>
+                            Este produto é um suplemento dietético,
+                            não um medicamento.
+                        </li>
+
+                        <li>
+                            Consulte um médico, nutricionista ou
+                            profissional habilitado quando necessário.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================
+             PRODUTO 2
+        ========================== -->
+
+        <article class="produto-card">
+
+            <div class="produto-topo">
+
+
+                <a
+                    href="https://meli.la/2f6sUcT"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <img
+                        class="produto"
+                        src="imagens/camisas.png"
+                        alt="Camisas esportivas">
+
+                </a>
+
+
+                <div class="produto-info">
+
+                    <h2>
+                        Camisas Esportivas
+                    </h2>
+
+                    <p>
+                        O kit com 4 camisetas masculinas Sandrini Dry Fit foi pensado para quem busca conforto, leveza e respirabilidade em treinos e no dia a dia. 
+                        A malha de poliéster dry fit seca rápido e oferece toque agradável, ideal para academia, caminhada, corrida leve, esportes, trabalho e momentos casuais.
+                        As cores são sortidas entre preto, azul marinho, chumbo e branco, sem opção de escolha, garantindo versatilidade para combinar com diferentes looks.
+                        Uma escolha prática, versátil e com excelente custo-benefício para rotinas ativas.    
+                    
+                    </p>
+
+
+                    <a
+                        class="botao"
+                        href="https://meli.la/2f6sUcT"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        SAIBA MAIS
+
+                    </a>
+
+                </div>
+
+            </div>
+
+    </article>
+
+     <!--=================
+     =========Produto 3  =====================-->   
+
+    <article class="produto-card">
+
+        <div class="produto-topo">
+
+            <a
+            href="https://meli.la/2DusqyZ"
+            target="_blank"
+            rel="noopener noreferrer">
+
+                    <img
+                    class="produto"
+                    src="imagens/barra_parafuso.png"
+                    alt="Produto fitness Barra fixa">
+
+            </a>
+
+        <div class="produto-info">
+
+            <h2>
+               Barras para elevação e treinamento corporal
+            </h2>
+
+            <p>
+                Produto perfeito para quem quer ter a comodidade de se exercitar em sua própria casa!
+
+                Possui dois modos de pegada: Aberta e Neutra, possibilitando uma maior quantidade de exercícios, bem como um maior número de de músculos trabalhados.
+
+                Ideal para Pull-up, Chin-up, Abdominal, Costas, Bíceps, Ombro, Peitoral, etc.
+
+                <h3>INFORMAÇÕES TÉCNICAS:</h3>
+
+                <ul>
+                    <li> Cor preta</li>
+                    <li> Suporta até 250 kg</li>
+                    <li> Acompanha suporte para saco de pancadas (BRINDE)</li>
+                    <li> Acompanha buchas e parafusos, pronta para montar e usar</li>
+                    <li> Pintura eletrostática, aonde pode-se tomar sol e chuva que não danifica</li>
+                </ul>
+                
+                <h3>DIMENSÕES:</h3>
+
+                <ul>
+                    <li> Comprimento total da barra: 1 metro</li>
+                    <li> Comprimento interno da barra: 63 cm</li>
+                    <li> Distância da parede até a barra: 40 cm</li>
+                    <li> Altura do suporte: 27,5 cm</li>
+                    <li> Diâmetro da barra: 1,25"</li>
+                </ul>
+
+                <p>Garantia de fábrica: 12 meses</p>
+            </p>
+
+            <a
+                class="botao"
+                href="https://meli.la/2DusqyZ"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                SAIBA MAIS
+
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+
+                <!--=================
+            =========Produto 4  =====================-->   
+
+    <article class="produto-card">
+
+            <div class="produto-topo">
+
+                <a
+                href="https://meli.la/1PsTGVW"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                        <img
+                        class="produto"
+                        src="imagens/pesos_casa.png"
+                        alt="Produto fitness Barra fixa">
+
+                </a>
+
+            <div class="produto-info">
+
+                <h2>
+                Kit 6 em 1 Halteres e <b>Anilhas Ajustáveis Kettlebell</b> Fit Cor Preto 15kg
+                </h2>
+
+                <p>
+                   O Kit de halteres e anilhas é ideal para quem quer otimizar os treinos e variar os exercícios. <b>Facilmente ajustável</b>, permite que você trabalhe diversos grupos musculares com apenas um produto.
+
+PESO Ajustável até 15kg
+                </p>
+
+                <a
+                    class="botao"
+                    href="https://meli.la/1PsTGVW"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    SAIBA MAIS
+
+                </a>
+
+            </div>
+
+        </div>
+    </article>
+
+
+            <!--=================
+            =========   Produto 5  =====================-->   
+
+    <article class="produto-card">
+
+            <div class="produto-topo">
+
+                <a
+                href="https://meli.la/16Xeny5"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                        <img
+                        class="produto"
+                        src="imagens/elastico.png"
+                        alt="Produto fitness Barra fixa">
+
+                </a>
+
+            <div class="produto-info">
+
+                <h2>
+                Kit 5 com Faixas Elásticas Super Banda com Manoplas Extras
+                </h2> 
+
+                <p>
+                    <b>Aplicações Diversificadas para Todos os Grupos</b>
+                        <br> <br>
+                        <ul>
+                            <li><b>1.Musculação e Tonificação:</b> Trabalhe todos os grupos musculares com exercícios específicos — glúteos com abduções, peito com cruzes, costas com remadas.</li>
+
+                            <li><b>2.Auxílio em Exercícios Complexos:</b> Use a resistência para reduzir a carga de dominadas ou flexões, ajudando iniciantes a dominar esses movimentos gradualmente.</li>
+
+                            <li><b>3.Recuperação e Relaxamento</b>: As fitas de baixa resistência são perfeitas para exercícios de fisioterapia, aliviando a rigidez muscular em ombros e coluna, especialmente para pessoas que passam muito tempo sentadas.</li>
+                        </ul>  <br>             
+
+                    Kit de 5 Fitas de Resistência TPE com Acessórios - Para Musculação e Recuperação
+                    Fitas Elásticas TPE 5 Cores (5-125lb) + Manoplas + Gancho de Porta - Ideal para Dominadas
+                    Kit Completo de Fitas de Resistência TPE: 5 Níveis de Resistência + Saco de Armazenamento
+                    Fitas de Resistência para Treino em Casa - TPE 5 Peças com Gancho de Montanhismo e Porta
+                </p>
+
+                <a
+                    class="botao"
+                    href="https://meli.la/16Xeny5"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    SAIBA MAIS
+
+                </a>
+
+            </div>
+
+        </div>
+    </article>
+
+
+            <!--=================
+            =========Produto 6  =====================-->   
+
+    <article class="produto-card">
+
+            <div class="produto-topo">
+
+                <a
+                href="https://meli.la/28c38hH"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                        <img
+                        class="produto"
+                        src="imagens/cross_over.png"
+                        alt="Produto fitness Cross Over">
+
+                </a>
+
+            <div class="produto-info">
+
+                <h2>
+                <b>Mono Cross Over parede de concreto</b>
+                </h2>
+
+                <p>
+                    O Mono Cross Over Parede Puxada Alta Fitness Profissional Fixo da marca GRUPOC3 é a solução ideal para quem busca otimizar seu treino em casa ou em ambientes profissionais.
+                    <br>
+                    Com um design robusto em ferro, este equipamento garante durabilidade e resistência, suportando até 100 kg, permitindo uma ampla variedade de exercícios.
+                    <br>
+                    A montagem na parede proporciona um espaço eficiente, ideal para quem deseja maximizar a área de treino.
+                    <br>
+                    O kit de montagem incluído facilita a instalação, tornando o processo rápido e prático, mesmo para iniciantes.
+                    <br>
+                    Este equipamento é perfeito para treinos de força e resistência, permitindo trabalhar diferentes grupos musculares de forma eficaz. Com o Mono Crossover, você pode realizar puxadas altas e diversificar seus treinos, alcançando seus objetivos de forma mais rápida e segura.
+                    <br>
+                    <b>NÃO ACOMPANHA ANILHAS/PESOS</b>
+                </p>
+
+                <a
+                    class="botao"
+                    href="https://meli.la/28c38hH"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    SAIBA MAIS
+
+                </a>
+
+            </div>
+
+        </div>
+    </article>
+    
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <p>
+            <strong>
+                Velho Guerreiro
+            </strong>
+        </p>
+
+        <p>
+            Força, disciplina e evolução.
+        </p>
+
+        <p>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            |
+
+            <a href="sobre.html">
+                Sobre
+            </a>
+
+            |
+
+            <a href="contato.html">
+                Contato
+            </a>
+
+            |
+
+            <a href="politica_priv.html">
+                Política de Privacidade
+            </a>
+
+        </p>
+
+        <p class="copyright">
+
+            © 2026 Velho Guerreiro.
+            Todos os direitos reservados.
+
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
