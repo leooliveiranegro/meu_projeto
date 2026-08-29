@@ -1,41 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<style>
-    body {
-            background:black;
-            color:whitesmoke;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.8;
-        }
-
-</style>
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Confira as últimas matérias do Velho Guerreiro sobre musculação, alimentação, corrida, suplementação e qualidade de vida.">
-
-    <meta name="robots"
-          content="index, follow">
-
-    <title>Blog | Velho Guerreiro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fale com a equipe do Velho Guerreiro. Dúvidas sobre treinos, suplementação e parcerias para o público 40+.">
+    <meta name="robots" content="index, follow">
+    <title>Contato | Velho Guerreiro - Treinos Acima de 40 Anos</title>
     <link rel="shortcut icon" href="/imagens/favicon/loguinho.ico" type="image/x-icon">
-
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            color: #f5f5f5;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: #111111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .sub {
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .info-box {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 3px solid #ff4500;
+        }
+        .info-box p {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+        .info-box b { color: #ff4500; }
+        .info-box a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        .info-box a:hover { color: #ff4500; }
+        .aviso {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            margin-top: 25px;
+            border-top: 1px solid #222;
+            padding-top: 20px;
+        }
+        .btn-voltar {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            background: #ff4500;
+            color: #fff;
+            padding: 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        .btn-voltar:hover { background: #e03e00; }
+    </style>
+</head>
 <body>
-    <h1>FALE CONOSCO</h1>
-    <p>
-        <b>Telefone:(11) 9 1568-7808</b>
-        <hr> <br>
-        <b>E-mail:macaceb@yahoo.com.br</b>
-        <hr>
-        <br>
-        <a href="index.html"> Voltar</a>
-    </p>
+    <div class="container">
+        <h1>FALE CONOSCO</h1>
+        <p class="sub">Equipe Velho Guerreiro - Resposta em até 24h</p>
 
+        <div class="info-box">
+            <p><b>📧 E-mail de Contato:</b><br>
+            <a href="mailto:contato@treinos-acima-de-40-anos.com.br">contato@treinos-acima-de-40-anos.com.br</a></p>
+            
+            <p><b>📱 WhatsApp Comercial:</b><br>
+            <a href="https://wa.me/5511915687808" target="_blank">(11) 9 1568-7808</a> - Seg a Sex, 9h às 18h</p>
+        </div>
+
+        <p style="font-size: 14px; color: #aaa; text-align: center;">
+            Para parcerias, dúvidas sobre treinos ou sugestões de conteúdo, 
+            fale conosco. Somos um portal especializado em saúde e performance para homens 40+.
+        </p>
+
+        <p class="aviso">
+            Este site tem caráter informativo e não substitui orientação médica ou profissional de educação física.
+        </p>
+
+        <a href="index.html" class="btn-voltar">← VOLTAR PARA O INÍCIO</a>
+    </div>
 </body>
+</html>
