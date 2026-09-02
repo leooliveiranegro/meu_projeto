@@ -1,171 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Confira todos os artigos, dicas e guias sobre musculação, corrida, alimentação e saúde do portal Velho Guerreiro.">
-    <meta name="keywords" content="artigos, musculação, treinos, alimentação, suplementação, saúde, velho guerreiro">
-    <meta name="author" content="Velho Guerreiro">
-    <meta name="robots" content="index, follow">
-    <link rel="shortcut icon" href="/imagens/favicon/loguinho.ico" type="image/x-icon">
-    <title>Novidades & Artigos | Velho Guerreiro</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9372817756630399" crossorigin="anonymous"></script>
-    <style>
-        *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-        body{background:#f2f2f2;color:#222;font-family:Arial,Helvetica,sans-serif;line-height:1.7}
-        header{background:#111;color:white;padding:15px 20px;display:flex;align-items:center;justify-content:center;gap:15px}
-        .logo{width:65px;height:65px;object-fit:contain}
-        .chamada{font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;color:#ddd;font-size:2rem}
-        nav{background:#A0522D}nav ul{list-style:none;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:5px;padding:10px}
-        nav a{display:block;text-decoration:none;color:white;padding:8px 14px;border-radius:7px;font-weight:bold;transition:0.3s}
-        nav a:hover,nav a.active{background:#111;color:#fff}
-        main{max-width:1000px;margin:30px auto;padding:0 20px}
-        .hero-artigos{text-align:center;margin-bottom:35px;background:white;padding:30px 20px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.08)}
-        .hero-artigos h1{color:#111;font-size:2.2rem;margin-bottom:10px}.hero-artigos p{color:#666;font-size:1.1rem}
-        .artigos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:25px;margin-bottom:40px}
-        .card-artigo{background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.08);display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
-        .card-artigo:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.15)}
-        .card-imagem-link{display:block;overflow:hidden;height:180px}.card-imagem{width:100%;height:100%;object-fit:cover;transition:transform .3s}
-        .card-artigo:hover .card-imagem{transform:scale(1.05)}
-        .card-conteudo{padding:20px;display:flex;flex-direction:column;flex-grow:1}
-        .categoria-tag{align-self:flex-start;background:#f5eee9;color:#A0522D;padding:3px 10px;border-radius:5px;font-weight:bold;font-size:.75rem;margin-bottom:10px;text-transform:uppercase}
-        .card-titulo{font-size:1.25rem;color:#111;line-height:1.4;margin-bottom:10px}.card-titulo a{color:inherit;text-decoration:none}
-        .card-titulo a:hover{color:#A0522D}.card-resumo{color:#555;font-size:.95rem;margin-bottom:15px;flex-grow:1}
-        .card-rodape{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eee;padding-top:12px;margin-top:auto}
-        .card-data{font-size:.85rem;color:#888}.card-btn{color:#A0522D;font-weight:bold;font-size:.9rem;text-decoration:none}
-        .card-btn:hover{color:#111}footer{background:#111;color:#ccc;text-align:center;padding:30px 20px;margin-top:40px}
-        footer a{color:#ddd;text-decoration:none;margin:0 8px}footer a:hover{color:white}.copyright{margin-top:15px;font-size:.9rem;color:#888}
-        @media(max-width:600px){header{padding:12px}.logo{width:50px;height:50px}.chamada{font-size:1.5rem}nav ul{flex-direction:column}nav a{width:100%;text-align:center}main{margin-top:20px;padding:0 10px}.artigos-grid{grid-template-columns:1fr}}
-    </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Confira todos os artigos, dicas e guias sobre musculação, corrida, alimentação e saúde do portal Velho Guerreiro.">
+<link rel="shortcut icon" href="/imagens/favicon/loguinho.ico" type="image/x-icon">
+<title>Novidades & Artigos | Velho Guerreiro</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9372817756630399" crossorigin="anonymous"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:#f2f2f2;color:#222;font-family:Arial,Helvetica,sans-serif;line-height:1.7}
+header{background:#111;color:white;padding:15px 20px;display:flex;align-items:center;justify-content:center;gap:15px}
+.logo{width:65px;height:65px;object-fit:contain}.chamada{font-family:'Franklin Gothic Medium',Arial,sans-serif;color:#ddd;font-size:2rem}
+nav{background:#A0522D}nav ul{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;gap:5px;padding:10px}
+nav a{display:block;text-decoration:none;color:white;padding:8px 14px;border-radius:7px;font-weight:bold}
+nav a:hover,nav a.active{background:#111}
+main{max-width:1000px;margin:30px auto;padding:0 20px}
+.hero-artigos{text-align:center;margin-bottom:35px;background:white;padding:30px 20px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.08)}
+.hero-artigos h1{color:#111;font-size:2.2rem;margin-bottom:10px}.hero-artigos p{color:#666;font-size:1.1rem}
+.artigos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:25px;margin-bottom:40px}
+.card-artigo{background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.08);display:flex;flex-direction:column;transition:.3s}
+.card-artigo:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.15)}
+.card-imagem-link{display:block;overflow:hidden;height:170px}.card-imagem{width:100%;height:100%;object-fit:cover;transition:.3s}
+.card-artigo:hover .card-imagem{transform:scale(1.05)}
+.card-conteudo{padding:20px;display:flex;flex-direction:column;flex-grow:1}
+.categoria-tag{align-self:flex-start;background:#f5eee9;color:#A0522D;padding:3px 10px;border-radius:5px;font-weight:bold;font-size:.75rem;margin-bottom:10px;text-transform:uppercase}
+.card-titulo{font-size:1.25rem;color:#111;line-height:1.4;margin-bottom:10px}.card-titulo a{color:inherit;text-decoration:none}
+.card-titulo a:hover{color:#A0522D}.card-resumo{color:#555;font-size:.95rem;margin-bottom:15px;flex-grow:1}
+.card-rodape{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eee;padding-top:12px;margin-top:auto}
+.card-data{font-size:.85rem;color:#888}.card-btn{color:#A0522D;font-weight:bold;font-size:.9rem;text-decoration:none}
+footer{background:#111;color:#ccc;text-align:center;padding:30px 20px;margin-top:40px}footer a{color:#ddd;text-decoration:none;margin:0 8px}
+.copyright{margin-top:15px;font-size:.9rem;color:#888}
+@media(max-width:600px){main{padding:0 10px}.artigos-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-    <header>
-        <a href="../index.html" aria-label="Página inicial"><img class="logo" src="../imagens/velho_guerreiro.png" alt="Logo Velho Guerreiro"></a>
-        <div><div class="chamada">VELHO GUERREIRO</div></div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="lista.html" class="active">Artigos</a></li>
-            <li><a href="../produtos.html">Produtos</a></li>
-            <li><a href="../sobre.html">Sobre</a></li>
-            <li><a href="../contato.html">Contato</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="hero-artigos">
-            <h1>Novidades & Artigos</h1>
-            <p>Conteúdos práticos sobre treino, musculação, nutrição e hábitos para quem busca constante evolução.</p>
-        </section>
-        <section class="artigos-grid">
-            
-            <!-- ARTIGO 15 -->
-            <article class="card-artigo">
-                <a href="../artigos/jejum-treino-apos-40.html" class="card-imagem-link"><img style="height: 190px;" src="../imagens/jejum.png" alt="Treino com barra fixa em jejum" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Treino em Jejum</span><h2 class="card-titulo"><a href="../artigos/jejum-treino-apos-40.html">Jejum Intermitente Após os 40: Como Treinar Forte Sem Perder Músculo</a></h2><p class="card-resumo">Protocolo 16/8 testado na prática: como treinar em jejum na barra fixa, secar a barriga e manter a força depois dos 40.</p><div class="card-rodape"><span class="card-data">01/09/2026</span><a href="../artigos/jejum-treino-apos-40.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
-            
-            <!-- ARTIGO 14 -->
-            <article class="card-artigo">
-                <a href="../artigos/corrida-aventura-alcides-51-anos.html" class="card-imagem-link"><img style="height: 500px;" src="../imagens/corrida_alcides_strava.jpeg" alt="Corrida de aventura Alcides 51 anos de idade" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Corrida de Aventura com 51 anos de idade, Pace de 7 min 10 seg, 8.5Km</span><h2 class="card-titulo"><a href="../artigos/corrida-aventura-alcides-51-anos.html">Corrida de Aventura com mais de 50 anos de idade, atividade BRUTA para VELHO GUERREIRO preparado.</a></h2><p class="card-resumo">Superação, a palavra de sucesso do Alcides</p><div class="card-rodape"><span class="card-data">31/08/2026</span><a href="../artigos/corrida-aventura-alcides-51-anos.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<header><a href="../index.html"><img class="logo" src="../imagens/velho_guerreiro.png" alt="Logo Velho Guerreiro"></a><div class="chamada">VELHO GUERREIRO</div></header>
+<nav><ul><li><a href="../index.html">Início</a></li><li><a href="lista.html" class="active">Artigos</a></li><li><a href="../produtos.html">Produtos</a></li><li><a href="../sobre.html">Sobre</a></li><li><a href="../contato.html">Contato</a></li></ul></nav>
+<main>
+<section class="hero-artigos"><h1>Novidades & Artigos</h1><p>Conteúdos práticos sobre treino, musculação, nutrição e hábitos para quem busca constante evolução 40+.</p></section>
+<section class="artigos-grid">
 
-            <!-- ARTIGO 13 -->
-            <article class="card-artigo">
-                <a href="../artigos/treino-em-casa-muscle-up.html" class="card-imagem-link"><img style="height: 680px;" src="../imagens/capa_muscle_up.jpeg" alt="Treino em casa Muscle Up" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Melhore a sua força física treinando Muscle Up na barra fixa</span><h2 class="card-titulo"><a href="../artigos/treino-em-casa-muscle-up.html">Como treinar a sua melhor versão para fazer Muscle Up em casa.</a></h2><p class="card-resumo">Seja a versão mais forte de você mesmo.</p><div class="card-rodape"><span class="card-data">31/08/2026</span><a href="../artigos/treino-em-casa-muscle-up.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
-            
-            <!-- ARTIGO 12 -->
-            <article class="card-artigo">
-                <a href="../artigos/dor_joelho_40.html" class="card-imagem-link"><img style="height: 220px;" src="../imagens/escada_dor.png" alt="Dores no joelho" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Dores no joelho, como se protejer</span><h2 class="card-titulo"><a href="../artigos/dor_joelho_40.html">Como evitar e diminuir as dores no joelho depois dos 40 anos</a></h2><p class="card-resumo">Alívio das dores no joelho com exercícios simples e práticos.</p><div class="card-rodape"><span class="card-data">30/08/2026</span><a href="../artigos/dor_joelho_40.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 17 - CREATINA - CORRIGIDO -->
+<article class="card-artigo">
+<a href="../artigos/creatina-apos-40.html" class="card-imagem-link"><img src="../imagens/creatina_40.png" alt="Creatina após os 40 dose e benefícios para homem 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Suplementos 40+</span><h2 class="card-titulo"><a href="../artigos/creatina-apos-40.html">Creatina Após os 40: Dose Certa, Benefícios Reais e Como Tomar Sem Medo</a></h2><p class="card-resumo">Faz mal para rim? Qual dose tomar? Veja o protocolo de 5g que me deu 15% a mais de força na barra e recuperação em 48h após os 40.</p><div class="card-rodape"><span class="card-data">02/09/2026</span><a href="../artigos/creatina-apos-40.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 11 -->
-            <article class="card-artigo">
-                <a href="../artigos/treino_qualidade_vida.html" class="card-imagem-link"><img style="height: 520px;" src="../imagens/quali_vida.jpg" alt="Treino na praça" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Treinando em casa</span><h2 class="card-titulo"><a href="../artigos/treino_qualidade_vida.html">Treinando em casa e obtendo ganhos reais na musculatura</a></h2><p class="card-resumo">Seu Treino no seu tempo e no seu horário.</p><div class="card-rodape"><span class="card-data">29/08/2026</span><a href="../artigos/treino_qualidade_vida.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 16 - TESTO BAIXA -->
+<article class="card-artigo">
+<a href="../artigos/testo_baixa_40.html" class="card-imagem-link"><img src="../imagens/testo_baixa.png" alt="Testosterona baixa 40+ antes e depois" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Hormônios 40+</span><h2 class="card-titulo"><a href="../artigos/testo_baixa_40.html">Testosterona Baixa Depois dos 40? 5 Sinais Que Seu Corpo Está Pedindo Socorro</a></h2><p class="card-resumo">Cansado mesmo dormindo? Barriga que não sai e força caindo? Veja os 5 sinais e o protocolo natural de 5 pilares para voltar a ter energia de guerreiro.</p><div class="card-rodape"><span class="card-data">02/09/2026</span><a href="../artigos/testo_baixa_40.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 10 - CARDIO NOVO EM 1º LUGAR -->
-            <article class="card-artigo">
-                <a href="../artigos/treino_cardio.html" class="card-imagem-link">
-                    <img src="../imagens/nadador_2.jpg" alt="Homem 40+ nadando com touca Velho Guerreiro" class="card-imagem" loading="lazy">
-                </a>
-                <div class="card-conteudo">
-                    <span class="categoria-tag">Cardio & Longevidade - NOVO</span>
-                    <h2 class="card-titulo"><a href="../artigos/treino_cardio.html">Treino de Cardio Após os 40: Coração Forte Sem Perder Músculo</a></h2>
-                    <p class="card-resumo">O guia definitivo de cardio para 40+: Zona 2, natação como melhor opção sem impacto e como não perder massa magra.</p>
-                    <div class="card-rodape">
-                        <span class="card-data">29/08/2026</span>
-                        <a href="../artigos/treino_cardio.html" class="card-btn">Ler Artigo →</a>
-                    </div>
-                </div>
-            </article>
+<!-- 15 - JEJUM -->
+<article class="card-artigo">
+<a href="../artigos/jejum-treino-apos-40.html" class="card-imagem-link"><img src="../imagens/jejum.png" alt="Jejum intermitente 40+ treino barra" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Secar Barriga</span><h2 class="card-titulo"><a href="../artigos/jejum-treino-apos-40.html">Jejum Intermitente Após os 40: Como Treinar Forte Sem Perder Músculo</a></h2><p class="card-resumo">Protocolo 16/8 testado na prática: como treinar em jejum na barra fixa, secar a barriga e manter a força depois dos 40.</p><div class="card-rodape"><span class="card-data">01/09/2026</span><a href="../artigos/jejum-treino-apos-40.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 9 -->
-            <article class="card-artigo">
-                <a href="../artigos/treino_barra_real.html" class="card-imagem-link"><img style="height: 203px;" src="../imagens/voei_real.jpeg" alt="Treino na praça" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Calistenia</span><h2 class="card-titulo"><a href="../artigos/treino_barra_real.html">Treine em Casa ou na Praça Mantendo Performance</a></h2><p class="card-resumo">Mantenha a sua performance treinando em casa ou nas praças públicas com barra fixa.</p><div class="card-rodape"><span class="card-data">25/08/2026</span><a href="../artigos/treino_barra_real.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 14 - ALCIDES -->
+<article class="card-artigo">
+<a href="../artigos/corrida-aventura-alcides-51-anos.html" class="card-imagem-link"><img src="../imagens/corrida_alcides_strava.jpeg" alt="Alcides 51 anos corrida aventura" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Histórias Reais</span><h2 class="card-titulo"><a href="../artigos/corrida-aventura-alcides-51-anos.html">Alcides, 51 Anos: 8,5km com Obstáculos e Pace 7:10 na Raça</a></h2><p class="card-resumo">História real de superação: calor, lama e morro. Veja como um Velho Guerreiro de 51 anos completou 8,5km sem caminhar.</p><div class="card-rodape"><span class="card-data">31/08/2026</span><a href="../artigos/corrida-aventura-alcides-51-anos.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 1 -->
-            <article class="card-artigo">
-                <a href="../artigos/treino_forca.html" class="card-imagem-link"><img src="../imagens/const_musc.jpg" alt="Treino de Força Eficiente Após os 40" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Treinos</span><h2 class="card-titulo"><a href="../artigos/treino_forca.html">Como Montar um Treino de Força Eficiente Após os 40 Anos</a></h2><p class="card-resumo">Descubra como estruturar sua rotina de musculação priorizando a hipertrofia, recuperação muscular e prevenção de lesões.</p><div class="card-rodape"><span class="card-data">24/08/2026</span><a href="../artigos/treino_forca.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 13 - MUSCLE UP -->
+<article class="card-artigo">
+<a href="../artigos/treino-em-casa-muscle-up.html" class="card-imagem-link"><img src="../imagens/capa_muscle_up.jpeg" alt="Muscle up barra fixa 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Força 40+</span><h2 class="card-titulo"><a href="../artigos/treino-em-casa-muscle-up.html">Muscle Up Após os 40: Como Sair do Zero e Fazer o Primeiro Sem Lesão</a></h2><p class="card-resumo">Progressão inteligente: da barra fixa à explosão. Guia prático para conquistar seu primeiro muscle up em casa.</p><div class="card-rodape"><span class="card-data">31/08/2026</span><a href="../artigos/treino-em-casa-muscle-up.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 2 -->
-            <article class="card-artigo">
-                <a href="../artigos/alim_cetog.html" class="card-imagem-link"><img src="../imagens/ceto3.png" alt="Alimentação cetogênica" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Alimentação</span><h2 class="card-titulo"><a href="../artigos/alim_cetog.html">Alimentação Inteligente: Estratégias Para Acelerar o Metabolismo</a></h2><p class="card-resumo">Veja os principais alimentos e hábitos nutricionais que ajudam a manter a energia alta e queimar gordura de forma consistente.</p><div class="card-rodape"><span class="card-data">22/08/2026</span><a href="../artigos/alim_cetog.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 12 - DOR JOELHO -->
+<article class="card-artigo">
+<a href="../artigos/dor_joelho_40.html" class="card-imagem-link"><img src="../imagens/escada_dor.png" alt="Dor no joelho 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Dores & Lesões</span><h2 class="card-titulo"><a href="../artigos/dor_joelho_40.html">Dor no Joelho Depois dos 40? Protocolo de 10 Min Que Me Salvou</a></h2><p class="card-resumo">Subir escada doendo? 3 exercícios simples que aliviam a dor e protegem o joelho para voltar a agachar e correr sem medo.</p><div class="card-rodape"><span class="card-data">30/08/2026</span><a href="../artigos/dor_joelho_40.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 3 -->
-            <article class="card-artigo">
-                <a href="../artigos/card_suplme.html" class="card-imagem-link"><img src="../imagens/suplementos_gerais.png" alt="Creatina e Whey" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Suplementos</span><h2 class="card-titulo"><a href="../artigos/card_suplme.html">Guia Definitivo de Creatina e Whey Protein: Vale a Pena?</a></h2><p class="card-resumo">Entenda o papel real dos suplementos alimentares no ganho de força e na recuperação pós-treino diária.</p><div class="card-rodape"><span class="card-data">23/08/2026</span><a href="../artigos/card_suplme.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 11 - QUALIDADE VIDA -->
+<article class="card-artigo">
+<a href="../artigos/treino_qualidade_vida.html" class="card-imagem-link"><img src="../imagens/quali_vida.jpg" alt="Treino qualidade de vida 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Treino em Casa</span><h2 class="card-titulo"><a href="../artigos/treino_qualidade_vida.html">Treinando em Casa e Obtendo Ganhos Reais Após os 40</a></h2><p class="card-resumo">Sem academia: como montar rotina de 35 min em casa e ganhar músculo de verdade com disciplina.</p><div class="card-rodape"><span class="card-data">29/08/2026</span><a href="../artigos/treino_qualidade_vida.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 4 -->
-            <article class="card-artigo">
-                <a href="../artigos/testo.html" class="card-imagem-link"><img src="../imagens/testo_1000_1.jpg" alt="Testosterona natural" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Testosterona</span><h2 class="card-titulo"><a href="../artigos/testo.html">Saiba como potencializar a produção natural de Testosterona</a></h2><p class="card-resumo">Testosterona, o combustível para o ganho de massa magra após os 40 anos.</p><div class="card-rodape"><span class="card-data">23/08/2026</span><a href="../artigos/testo.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 10 - CARDIO -->
+<article class="card-artigo">
+<a href="../artigos/treino_cardio.html" class="card-imagem-link"><img src="../imagens/nadador_2.jpg" alt="Cardio natação 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Cardio & Longevidade</span><h2 class="card-titulo"><a href="../artigos/treino_cardio.html">Treino de Cardio Após os 40: Coração Forte Sem Perder Músculo</a></h2><p class="card-resumo">Guia Zona 2: por que natação é #1 após 40, quanto fazer por semana e como não queimar massa magra.</p><div class="card-rodape"><span class="card-data">29/08/2026</span><a href="../artigos/treino_cardio.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 5 -->
-            <article class="card-artigo">
-                <a href="../artigos/alongamento.html" class="card-imagem-link"><img src="../imagens/along_2.jpg" alt="Alongamento para evitar lesões" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Alongamento</span><h2 class="card-titulo"><a href="../artigos/alongamento.html">Aprenda a diminuir o risco de lesões e dores lombares</a></h2><p class="card-resumo">Alongamento, o segredo para não travar o crescimento e definição da musculatura.</p><div class="card-rodape"><span class="card-data">23/08/2026</span><a href="../artigos/alongamento.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 9 - BARRA REAL -->
+<article class="card-artigo">
+<a href="../artigos/treino_barra_real.html" class="card-imagem-link"><img src="../imagens/voei_real.jpeg" alt="Treino barra fixa praça" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Calistenia</span><h2 class="card-titulo"><a href="../artigos/treino_barra_real.html">Treine em Casa ou na Praça Mantendo Performance Total</a></h2><p class="card-resumo">Sem desculpa: como manter força e performance treinando na praça ou em casa só com barra fixa.</p><div class="card-rodape"><span class="card-data">25/08/2026</span><a href="../artigos/treino_barra_real.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 6 -->
-            <article class="card-artigo">
-                <a href="../artigos/treino_casa_barra.html" class="card-imagem-link"><img src="../imagens/barra_em casa.jpg" alt="Treino de barra fixa em casa" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Treinando em casa</span><h2 class="card-titulo"><a href="../artigos/treino_casa_barra.html">Treine em casa e faça sua própria rotina de barra fixa</a></h2><p class="card-resumo">Seu horário, sua rotina, no seu tempo. Treine em casa e mantenha sua evolução corporal.</p><div class="card-rodape"><span class="card-data">24/08/2026</span><a href="../artigos/treino_casa_barra.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 8 - B12 -->
+<article class="card-artigo">
+<a href="../artigos/vitamina_b12.html" class="card-imagem-link"><img src="../imagens/capa_b12.jpg" alt="Vitamina B12 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Vitaminas 40+</span><h2 class="card-titulo"><a href="../artigos/vitamina_b12.html">Vitamina B12 Baixa? Como Corrigir e Ganhar Energia Após os 40</a></h2><p class="card-resumo">Cansaço e formigamento? Veja sintomas de B12 baixa, alimentos ricos e quando suplementar com segurança.</p><div class="card-rodape"><span class="card-data">25/08/2026</span><a href="../artigos/vitamina_b12.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 7 -->
-            <article class="card-artigo">
-                <a href="../artigos/pre_tre_hidra.html" class="card-imagem-link"><img src="../imagens/agua_creatina.jpg" alt="Hidratação e pré-treino" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Hidratação</span><h2 class="card-titulo"><a href="../artigos/pre_tre_hidra.html">Hidratação: O Elemento Chave Para Performance</a></h2><p class="card-resumo">A hidratação é elementar para um organismo preparado e condicionado para atividades físicas.</p><div class="card-rodape"><span class="card-data">24/08/2026</span><a href="../artigos/pre_tre_hidra.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 7 - TREINO FORÇA EFICIENTE -->
+<article class="card-artigo">
+<a href="../artigos/treino_forca.html" class="card-imagem-link"><img src="../imagens/const_musc.jpg" alt="Treino força eficiente 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Treinos 40+</span><h2 class="card-titulo"><a href="../artigos/treino_forca.html">Como Montar um Treino de Força Eficiente Após os 40 Anos</a></h2><p class="card-resumo">Estruture sua rotina priorizando hipertrofia, recuperação muscular e prevenção de lesões depois dos 40.</p><div class="card-rodape"><span class="card-data">24/08/2026</span><a href="../artigos/treino_forca.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-            <!-- ARTIGO 8 -->
-            <article class="card-artigo">
-                <a href="../artigos/vitamina_b12.html" class="card-imagem-link"><img src="../imagens/capa_b12.jpg" alt="Vitamina B12" class="card-imagem" loading="lazy"></a>
-                <div class="card-conteudo"><span class="categoria-tag">Vitaminas</span><h2 class="card-titulo"><a href="../artigos/vitamina_b12.html">Controle da Vitamina B-12 Para Ganho de Massa</a></h2><p class="card-resumo">A forma correta de potencializar o ganho de massa corporal controlando a Vitamina B-12.</p><div class="card-rodape"><span class="card-data">25/08/2026</span><a href="../artigos/vitamina_b12.html" class="card-btn">Ler Artigo →</a></div></div>
-            </article>
+<!-- 6 - BARRA EM CASA -->
+<article class="card-artigo">
+<a href="../artigos/treino_casa_barra.html" class="card-imagem-link"><img src="../imagens/barra_em casa.jpg" alt="Barra fixa em casa 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Treino em Casa</span><h2 class="card-titulo"><a href="../artigos/treino_casa_barra.html">Treine em Casa: Sua Rotina de Barra Fixa no Seu Tempo</a></h2><p class="card-resumo">Seu horário, sua rotina. Como montar treino de barra fixa em casa gastando R$80 e mantendo evolução.</p><div class="card-rodape"><span class="card-data">24/08/2026</span><a href="../artigos/treino_casa_barra.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
 
-                                     
-        </section>
-    </main>
-    <footer>
-        <p><strong>Velho Guerreiro</strong></p><p>Força, disciplina e evolução.</p>
-        <p><a href="../index.html">Início</a> | <a href="lista.html">Artigos</a> | <a href="../sobre.html">Sobre</a> | <a href="../politica_priv.html">Política de Privacidade</a> | <a href="../termos_uso.html">Termos de Uso</a> | <a href="../contato.html">Contato</a></p>
-        <p class="copyright">© 2026 Velho Guerreiro. Todos os direitos reservados.</p>
-    </footer>
+<!-- 5 - HIDRATAÇÃO -->
+<article class="card-artigo">
+<a href="../artigos/pre_tre_hidra.html" class="card-imagem-link"><img src="../imagens/agua_creatina.jpg" alt="Hidratação pré treino" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Hidratação</span><h2 class="card-titulo"><a href="../artigos/pre_tre_hidra.html">Hidratação: O Elemento Chave Para Performance Após os 40</a></h2><p class="card-resumo">Água + eletrólitos: receita de isotônico caseiro para não ter cãibra e manter força no treino.</p><div class="card-rodape"><span class="card-data">24/08/2026</span><a href="../artigos/pre_tre_hidra.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
+
+<!-- 4 - TESTO NATURAL -->
+<article class="card-artigo">
+<a href="../artigos/testo.html" class="card-imagem-link"><img src="../imagens/testo_1000_1.jpg" alt="Testosterona natural 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Hormônios 40+</span><h2 class="card-titulo"><a href="../artigos/testo.html">Testosterona Natural: Como Potencializar o Combustível da Massa Magra</a></h2><p class="card-resumo">Testosterona é o combustível para ganho de massa após 40. Veja 4 hábitos que aumentam produção natural.</p><div class="card-rodape"><span class="card-data">23/08/2026</span><a href="../artigos/testo.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
+
+<!-- 3 - ALONGAMENTO -->
+<article class="card-artigo">
+<a href="../artigos/alongamento.html" class="card-imagem-link"><img src="../imagens/along_2.jpg" alt="Alongamento 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Mobilidade</span><h2 class="card-titulo"><a href="../artigos/alongamento.html">Alongamento 40+: Diminua o Risco de Lesões e Dores Lombares</a></h2><p class="card-resumo">O segredo para não travar: rotina de 8 min de mobilidade para não travar crescimento e definição muscular.</p><div class="card-rodape"><span class="card-data">23/08/2026</span><a href="../artigos/alongamento.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
+
+<!-- 2 - SUPLEMENTOS -->
+<article class="card-artigo">
+<a href="../artigos/card_suplme.html" class="card-imagem-link"><img src="../imagens/suplementos_gerais.png" alt="Creatina whey 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Suplementos</span><h2 class="card-titulo"><a href="../artigos/card_suplme.html">Guia Definitivo de Creatina e Whey Protein: Vale a Pena Após os 40?</a></h2><p class="card-resumo">Entenda o papel real dos suplementos no ganho de força e na recuperação pós-treino diária sem jogar dinheiro fora.</p><div class="card-rodape"><span class="card-data">23/08/2026</span><a href="../artigos/card_suplme.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
+
+<!-- 1 - CETOGÊNICA -->
+<article class="card-artigo">
+<a href="../artigos/alim_cetog.html" class="card-imagem-link"><img src="../imagens/ceto3.png" alt="Alimentação cetogênica 40+" class="card-imagem" loading="lazy"></a>
+<div class="card-conteudo"><span class="categoria-tag">Nutrição 40+</span><h2 class="card-titulo"><a href="../artigos/alim_cetog.html">Alimentação Inteligente: Estratégias Para Acelerar o Metabolismo 40+</a></h2><p class="card-resumo">Alimentos e hábitos que ajudam a manter energia alta e queimar gordura de forma consistente após os 40.</p><div class="card-rodape"><span class="card-data">22/08/2026</span><a href="../artigos/alim_cetog.html" class="card-btn">Ler Artigo →</a></div></div>
+</article>
+
+</section>
+</main>
+<footer><p><strong>Velho Guerreiro</strong></p><p>Força, disciplina e evolução.</p><p><a href="../index.html">Início</a> | <a href="lista.html">Artigos</a> | <a href="../sobre.html">Sobre</a> | <a href="../politica_priv.html">Política</a> | <a href="../termos_uso.html">Termos</a> | <a href="../contato.html">Contato</a></p><p class="copyright">© 2026 Velho Guerreiro. Todos os direitos reservados.</p></footer>
 </body>
 </html>
